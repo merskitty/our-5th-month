@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dear Lover</title>
+    <link rel="stylesheet" href="letter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+
+    <div class="container">
+        <h1 class="title">My dear fiancé</h1>
+        <div class="envelope" onclick="toggleLetter()">
+            <div class="envelope-flap"></div>
+            <div class="letter">
+                <div class="message-container">
+                    <p class="message">
+                        My Love,  
+                        <br><br>
+                        Five months together. It feels like it’s been both a lifetime and a blink of an eye. Every moment we've shared has been a chapter of something beautiful, something real. From the very first day, you’ve brought so much light into my life. I can’t even begin to describe how much you’ve changed me, how much you’ve made me believe in love all over again.
+
+                        These five months have been a whirlwind of laughter, joy, growth, and discovery. I’ve loved every second of it. You’ve been my calm, my support, and the one who makes everything feel right. From the quiet moments to the moments of pure excitement, I can’t help but smile thinking about everything we’ve experienced together.
+
+                        What amazes me the most is how naturally we’ve come together. It feels as if we were always meant to be here, sharing our lives and building something that feels so strong, so solid. Every conversation we’ve had, every laugh, every touch, has deepened the bond between us. I feel like I’m getting to know you more and more every day, and yet there is still so much to discover about the person I love so deeply.
+
+                        You’ve shown me what true love is, and I am in awe of the way you care, the way you listen, the way you make everything better. It’s in the little things—the way you hold my hand, the way you smile when you see me, the way you support me in everything I do. You’ve become a part of me, and I’m so incredibly thankful for the love you give.
+
+                        As we celebrate these five months, I can’t help but think about what’s to come. I know we’re just getting started, and I’m filled with excitement and hope for the future. I promise to love you with all my heart, to stand by your side, and to keep growing together. Thank you for everything you’ve already brought into my life.
+
+                        Here’s to five months, and to a lifetime of laughter, love, and memories yet to be made. You are my heart, my home, and the love I will always choose.
+                        <br><br>
+                        I love you endlessly.  
+                        <br><br>
+                        Forever yours,  
+                        <br>
+                        <span class="signature">Myungdae</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buttons below the envelope -->
+        <div class="footer-btn">
+            <a href="reasons.html" class="prev-btn">Previous Page</a>
+            <a href="index.html" class="next-btn">Back Home</a>
+        </div>
+    </div>
+
+    <script>
+        let isOpen = false;
+
+        function toggleLetter() {
+            const letter = document.querySelector(".letter");
+            const flap = document.querySelector(".envelope-flap");
+
+            if (isOpen) {
+                letter.classList.remove("open");
+                flap.classList.remove("open");
+            } else {
+                letter.classList.add("open");
+                flap.classList.add("open");
+            }
+            isOpen = !isOpen;
+        }
+    </script>
+</body>
+</html>

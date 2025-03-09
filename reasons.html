@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 Reasons I Love You</title>
+    <link rel="stylesheet" href="reasons.css">
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <div class="container">
+        <h1 class="title">52 reasons why I love you, because 50 aren't enough</h1>
+        <p class="subtitle">this is me trying be all cute and romantic</p>
+
+        <div class="grid">
+            <!-- Generate 50 cards -->
+            <script>
+        let reasons = [
+            "Iluminas mi mundo solo con estar en él.",
+            "Tu amor es el lugar más seguro que he conocido.",
+            "Haces que hasta los momentos más simples sean mágicos.",
+            "La forma en que me abrazas me hace sentir protegido.",
+            "Siempre sabes qué decir cuando más lo necesito.",
+            "Crees en mí incluso cuando yo dudo de mí mismo.",
+            "Me emocionas por el futuro a tu lado.",
+            "Tu amor me da fuerzas en mis días más difíciles.",
+            "Amo cómo tu mano encaja perfectamente en la mía.",
+            "Tu ternura me recuerda lo hermoso que es amar.",
+            "Traes alegría a mi vida de maneras que nunca imaginé.",
+            "Tus besos hacen latir mi corazón más rápido.",
+            "Me haces sentir especial todos los días.",
+            "Nunca permites que me sienta solo.",
+            "Tu voz es mi sonido favorito.",
+            "Me haces sentir que realmente importo.",
+            "Amo cómo siempre apoyas mis sueños.",
+            "A tu lado, mi corazón está en casa.",
+            "Me transmites paz con solo estar cerca.",
+            "Tu felicidad es mi felicidad.",
+            "Me haces sentir la persona más afortunada del mundo.",
+            "Amo cómo siempre logras sacarme una sonrisa.",
+            "Me ves tal como soy y me amas igual.",
+            "Tu amor me hace sentir completo.",
+            "Nos entendemos sin necesidad de palabras.",
+            "Me recuerdas cada día lo hermoso que es el amor.",
+            "Haces que las cosas más pequeñas se sientan importantes.",
+            "Tu risa es la melodía más dulce para mis oídos.",
+            "Amo tu pasión por las cosas que amas.",
+            "Cada momento a tu lado se vuelve inolvidable.",
+            "La forma en que me miras me hace sentir único.",
+            "Cada roce tuyo hace que mi corazón se acelere.",
+            "Tu amor me ha mostrado una felicidad que nunca conocí.",
+            "Siempre sabes cómo alegrarme el día.",
+            "Estar contigo es el mejor sentimiento del mundo.",
+            "Haces que mis sueños se sientan posibles solo con creer en mí.",
+            "Amo cómo me haces sentir seguro en tus brazos.",
+            "Eres mi primer pensamiento al despertar y el último al dormir.",
+            "Me haces sentir que todo tiene sentido.",
+            "Tu amor hace que todo se sienta bien.",
+            "Amo cómo encajamos tan perfectamente.",
+            "Me haces sentir más amado de lo que jamás imaginé.",
+            "Solo tu presencia mejora mi día.",
+            "Eres mi lugar favorito en el mundo.",
+            "Me recuerdas constantemente que soy amado.",
+            "Contigo, mi corazón está lleno.",
+            "Cada momento contigo es un recuerdo que atesoro.",
+            "Amo lo fácil que es amarte.",
+            "Eres lo mejor que me ha pasado. ",
+            "A tu lado, cada día es un regalo lleno de amor y felicidad.",
+            "En tu mirada descubrí el universo que siempre quise explorar.",
+            "Porque, honestamente, si tuviese que poner todas las razones, estaríamos aquí para siempre..."
+        ];
+
+
+                for (let i = 0; i < reasons.length; i++) {
+                    document.write(`
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">${i + 1}</div>
+                                <div class="card-back">${reasons[i]}</div>
+                            </div>
+                        </div>
+                    `);
+                }
+            </script>
+        </div>
+        <div class="footer-btn">
+            <a href="fav_pics.html" class="prev-btn">Previous Page</a>
+            <a href="letter.html" class="next-btn">Next Page</a>
+        </div>
+    </div>
+
+</body>
+</html>
